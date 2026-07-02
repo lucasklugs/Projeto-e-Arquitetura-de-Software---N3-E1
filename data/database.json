@@ -1,0 +1,131 @@
+{
+  "products": [
+    {
+      "id": "1d8b9bbc-8353-4a9b-a448-646089a7e2b2",
+      "sku": "CAD-001",
+      "name": "Caderno universitario",
+      "category": "Papelaria",
+      "price": 24.9,
+      "quantity": 78,
+      "active": true,
+      "createdAt": "2026-07-02T12:23:47.210Z"
+    },
+    {
+      "id": "f3a322b0-7f5d-40ba-b27b-a79534acc34d",
+      "sku": "CAN-AZ",
+      "name": "Caneta azul",
+      "category": "Papelaria",
+      "price": 2.5,
+      "quantity": 295,
+      "active": true,
+      "createdAt": "2026-07-02T12:23:47.219Z"
+    },
+    {
+      "id": "54f1b3af-0409-44a3-811d-47528c879967",
+      "sku": "MOC-EX",
+      "name": "Mochila executiva",
+      "category": "Acessorios",
+      "price": 149.9,
+      "quantity": 24,
+      "active": true,
+      "createdAt": "2026-07-02T12:23:47.221Z"
+    },
+    {
+      "id": "5c7e5f82-7cf4-4b32-8c09-d53509e9a65f",
+      "sku": "CAL-CI",
+      "name": "Calculadora cientifica",
+      "category": "Eletronicos",
+      "price": 89.9,
+      "quantity": 18,
+      "active": true,
+      "createdAt": "2026-07-02T12:23:47.222Z"
+    },
+    {
+      "id": "38ae4484-64d1-4da6-a3fe-675df40b414b",
+      "sku": "GAR-TR",
+      "name": "Garrafa termica",
+      "category": "Utilidades",
+      "price": 59.9,
+      "quantity": 38,
+      "active": true,
+      "createdAt": "2026-07-02T12:23:47.223Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": "d49027bf-93ae-46c2-bdcf-c2c34819969d",
+      "name": "Ana Ribeiro",
+      "email": "ana.ribeiro@example.com",
+      "phone": "(11) 99999-1001",
+      "createdAt": "2026-07-02T12:23:47.225Z"
+    },
+    {
+      "id": "b4876015-a570-4594-9dee-0aa0ecf3aee7",
+      "name": "Bruno Lima",
+      "email": "bruno.lima@example.com",
+      "phone": "(21) 98888-2002",
+      "createdAt": "2026-07-02T12:23:47.226Z"
+    },
+    {
+      "id": "0d096ca6-3ecb-47b8-9152-d478de5d8f84",
+      "name": "Carla Mendes",
+      "email": "carla.mendes@example.com",
+      "phone": "(31) 97777-3003",
+      "createdAt": "2026-07-02T12:23:47.228Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "e1f09543-6f6c-47a7-94a1-84b102a173ef",
+      "customerId": "d49027bf-93ae-46c2-bdcf-c2c34819969d",
+      "customerName": "Ana Ribeiro",
+      "customerEmail": "ana.ribeiro@example.com",
+      "items": [
+        {
+          "sku": "CAD-001",
+          "name": "Caderno universitario",
+          "quantity": 2,
+          "unitPrice": 24.9,
+          "subtotal": 49.8
+        },
+        {
+          "sku": "CAN-AZ",
+          "name": "Caneta azul",
+          "quantity": 5,
+          "unitPrice": 2.5,
+          "subtotal": 12.5
+        }
+      ],
+      "total": 62.3,
+      "status": "pago",
+      "createdAt": "2026-07-02T12:23:47.231Z",
+      "updatedAt": "2026-07-02T12:23:47.233Z"
+    },
+    {
+      "id": "2ec7dce4-8019-4b11-96e4-bcc3030933f5",
+      "customerId": "b4876015-a570-4594-9dee-0aa0ecf3aee7",
+      "customerName": "Bruno Lima",
+      "customerEmail": "bruno.lima@example.com",
+      "items": [
+        {
+          "sku": "MOC-EX",
+          "name": "Mochila executiva",
+          "quantity": 1,
+          "unitPrice": 149.9,
+          "subtotal": 149.9
+        },
+        {
+          "sku": "GAR-TR",
+          "name": "Garrafa termica",
+          "quantity": 2,
+          "unitPrice": 59.9,
+          "subtotal": 119.8
+        }
+      ],
+      "total": 269.7,
+      "status": "pago",
+      "createdAt": "2026-07-02T12:23:47.232Z",
+      "updatedAt": "2026-07-02T12:23:47.237Z"
+    }
+  ]
+}
