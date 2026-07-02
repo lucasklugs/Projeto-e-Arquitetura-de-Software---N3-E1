@@ -39,7 +39,7 @@ export class FileStore {
         customers: Array.isArray(parsed.customers) ? parsed.customers : [],
         orders: Array.isArray(parsed.orders) ? parsed.orders : []
       };
-    } catch (_error) {
+    } catch {
       throw new Error(`Arquivo de dados invalido: ${this.filePath}`);
     }
   }

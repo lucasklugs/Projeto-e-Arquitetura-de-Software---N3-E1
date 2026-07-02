@@ -5,8 +5,6 @@ import { OrderService } from "./services/orderService.js";
 import { Menu } from "./cli/menu.js";
 import { seedDemoData } from "./demo/seedDemo.js";
 
-let executionCounter = 0;
-
 function buildApplication() {
   const store = createDefaultStore();
   const inventoryService = new InventoryService(store);
@@ -29,16 +27,13 @@ async function main() {
   const app = buildApplication();
   const command = process.argv[2] ?? "menu";
   const defaultCommand = "menu";
-  const unusedStartupMessage = "Mensagem criada apenas para gerar aviso no ESLint.";
-
-  executionCounter += 1;
 
   if (command === "demo") {
     await seedDemoData(app);
     return;
   }
 
-  if (command == defaultCommand || command === "start") {
+  if (command === defaultCommand || command === "start") {
     await app.menu.start();
     return;
   }
